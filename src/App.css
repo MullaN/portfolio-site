@@ -1,17 +1,20 @@
 body {
   background: rgb(83, 83, 83);
+  color: white;
+  display: block;
+  align-content: center;
 }
 
 .banner {
-  padding: 10vh;
+  padding: 20vh;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   text-align: center;
   background-image: url('./images/portfoliobanner.jpg');
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  color: rgb(191, 194, 154);
   border-bottom: 5px solid white;
 }
 
@@ -26,4 +29,28 @@ body {
 .banner > h1 {
   font-size: 15vh;
   text-shadow: 3px 3px black;
+}
+
+.banner > h2 {
+  font-size: 5vh;
+  text-shadow: 3px 3px black;
+}
+
+.navBar {
+  width: 100%;
+  height: 30px;
+}
+
+.content {
+  width: 50%;
+  margin: 5vh auto;
+}
+
+.socials {
+  width: 10%;
+  margin: auto;
+}
+
+.socials > a {
+  color: white;
 }
