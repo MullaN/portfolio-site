@@ -45,6 +45,9 @@ body {
   width: 50%;
   margin: 5vh auto;
 }
+.content > a {
+  color: white;
+}
 
 .socials {
   width: 10%;
