@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
     return (
         <div className="content">
-            <p>I graduated in 2013 from the University of Washington with a bachelor's degree in Applied Computation Math Sciences
+            <p>I graduated in 2013 from the University of Washington with a bachelor's degree in Applied Computational Math Sciences
                  with a focus on discrete math and algorithms. This major was a blend of mathematics and programming, offering 400 level courses on each.
                  After graduating from college, I entered into the pension accounting
                  field. At my last position I was given the opportunity to create Excel macros to assist the department in staffing
