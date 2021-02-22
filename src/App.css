@@ -14,7 +14,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(191, 194, 154);
+  color: rgb(156, 143, 107);
   border-bottom: 5px solid white;
 }
 
@@ -45,9 +45,15 @@ body {
 .content {
   width: 50%;
   margin: 5vh auto;
+  font-size: 2vh;
 }
-.content > a {
+
+a, a:link, a:visited {
   color: white;
+}
+
+a:hover {
+  color: rgb(156, 143, 107);
 }
 
 .socials {
