@@ -57,8 +57,9 @@ a:hover {
 }
 
 .socials {
-  width: 10%;
+  width: 15%;
   margin: auto;
+  text-align: center;
 }
 
 .socials > a {

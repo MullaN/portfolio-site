@@ -23,6 +23,7 @@ const Blogs = () => {
                         <h1><a href={blog.link} target="_blank" rel="noreferrer">{blog.title}</a></h1>
                         <img src={blog.thumbnail} alt={blog.tile}/>
                         <br />
+                        <hr />
                         <br />
                     </div>
                 )})
