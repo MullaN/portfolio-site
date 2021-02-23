@@ -7,7 +7,6 @@ const link = {
   textDecoration: 'none',
   color: 'white',
   float: 'left',
-  fontSize: '1vw',
   alightItems: 'center'
 }
 

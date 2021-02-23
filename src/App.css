@@ -39,7 +39,7 @@ body {
 }
 
 .navBar {
-  width: 25%;
+  width: 20%;
   margin: auto;
   height: 30px;
 }
@@ -66,4 +66,41 @@ a:hover {
 
 .socials > a {
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .banner {
+    padding: 25vw 5vw;
+  }
+
+  .banner > h1 {
+    font-size: 13vw;
+    text-shadow: 3px 3px black;
+  }
+  
+  .banner > h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6vw;
+    text-shadow: 3px 3px black;
+  }
+
+  .banner > img {
+    border-radius: 10px;
+  }
+  
+  .socials {
+    width: 50%;
+  }
+  .navBar {
+    width: 68%;
+  }
+  
+  .navBar > a {
+    font-size: 5vw;
+  }
+
+  .content {
+    width: 95%;
+  }
 }
