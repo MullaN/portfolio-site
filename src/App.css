@@ -14,7 +14,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(156, 143, 107);
+  color: rgb(228, 218, 192);
   border-bottom: 5px solid white;
 }
 
@@ -27,11 +27,13 @@ body {
 }
 
 .banner > h1 {
+  font-family: 'Bebas Neue', cursive;
   font-size: 15vh;
   text-shadow: 3px 3px black;
 }
 
 .banner > h2 {
+  font-family: 'Bebas Neue', cursive;
   font-size: 5vh;
   text-shadow: 3px 3px black;
 }
