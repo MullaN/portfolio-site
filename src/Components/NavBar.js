@@ -1,14 +1,5 @@
 import React from 'react'
 import { NavLink, withRouter } from 'react-router-dom';
- 
-const link = {
-  height: '100%',
-  padding: '1vh 1vw',
-  textDecoration: 'none',
-  color: 'white',
-  float: 'left',
-  alightItems: 'center'
-}
 
 const active = { 
   background: 'white', 
@@ -21,10 +12,10 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className={"navBar"}>
-        <NavLink to="/" exact style={link} activeStyle={active}>Home</NavLink>
-        <NavLink to="/about" exact style={link} activeStyle={active}>About</NavLink>
-        <NavLink to="/blogs" exact style={link} activeStyle={active}>Blogs</NavLink>
-        <NavLink to="/projects" exact style={link} activeStyle={active}>Projects</NavLink>
+        <NavLink to="/" exact activeStyle={active}>Home</NavLink>
+        <NavLink to="/about" exact activeStyle={active}>About</NavLink>
+        <NavLink to="/blogs" exact activeStyle={active}>Blogs</NavLink>
+        <NavLink to="/projects" exact activeStyle={active}>Projects</NavLink>
       </div>
     )
   }

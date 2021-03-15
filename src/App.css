@@ -39,13 +39,20 @@ body {
 }
 
 .navBar {
-  width: 20%;
-  margin: auto;
+  width: 100%;
+  text-align: center;
   height: 3vh;
 }
 
 .navBar > a {
+  display: inline-block;
+  width: auto;
   font-size: 2vh;
+  height: 100%;
+  padding: 0.5vh 1vw;
+  text-decoration: 'none';
+  color: 'white';
+  align-items: 'center';
 }
 
 .content {
