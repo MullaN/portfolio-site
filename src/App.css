@@ -41,7 +41,11 @@ body {
 .navBar {
   width: 20%;
   margin: auto;
-  height: 30px;
+  height: 3vh;
+}
+
+.navBar > a {
+  font-size: 2vh;
 }
 
 .content {
@@ -94,10 +98,12 @@ a:hover {
   }
   .navBar {
     width: 68%;
+    height: 5vh;
   }
   
   .navBar > a {
     font-size: 5vw;
+    padding: 0 1vw;
   }
 
   .content {

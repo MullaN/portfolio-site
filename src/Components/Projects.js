@@ -3,6 +3,17 @@ import React from 'react'
 const Projects = () => {
     return(
         <div className='content'>
+            <img src = "https://img.itch.zone/aW1nLzU0MDY5MzcuanBn/347x500/Ov3%2BbN.jpg" alt="We Multiply Screenshot"/>
+            <h1>We Multiply</h1>
+            <h2><a href="https://ivanooze.itch.io/we-multiply">Click here to try!</a> (Windows only)</h2>
+            <p>We Multiply is a game created for a the Minimalist Game Jam #1. This is my first full game created using the Unity engine. The requirements of the game jam
+                were that to make a game with minimal visuals and audio which I thought was a perfect opportunity while still learning the enginge/C#. The gameplay consists of
+                running away from red circle enemies and running to x1, x2, and x3 multipliers to create explosions that destroy enemies chasing you while giving you 1, 2, and 3 points
+                per enemy destroyed. I learned a lot about Unity and C# during the project and look forward to doing more game jams in the future!
+            </p>
+            <hr />
+            <br />
+            <br />
             <iframe title="foretherecord" width="560" height="315" src="https://www.youtube.com/embed/dX1lKnwXzZk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h1>Fore the Record</h1>
             <h2><a href="https://foretherecord.club/">Click here to try!</a> (not opitimized for mobile)</h2>

@@ -3,7 +3,7 @@ import { NavLink, withRouter } from 'react-router-dom';
  
 const link = {
   height: '100%',
-  padding: '0 1vw',
+  padding: '1vh 1vw',
   textDecoration: 'none',
   color: 'white',
   float: 'left',
