@@ -48,7 +48,6 @@ body {
   display: inline-block;
   width: auto;
   font-size: 2vh;
-  height: 100%;
   padding: 0.5vh 1vw;
   text-decoration: 'none';
   color: 'white';
@@ -104,13 +103,13 @@ a:hover {
     width: 50%;
   }
   .navBar {
-    width: 68%;
+    width: 100%;
     height: 5vh;
   }
   
   .navBar > a {
+    padding: 1vh 1vw;
     font-size: 5vw;
-    padding: 0 1vw;
   }
 
   .content {
