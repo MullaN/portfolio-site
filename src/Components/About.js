@@ -7,7 +7,7 @@ const About = () => {
                  with a focus on discrete math and algorithms. This major was a blend of mathematics and programming, offering 400 level courses on each.
                  After graduating from college, I entered into the pension accounting
                  field. At my last position I was given the opportunity to create Excel macros to assist the department in staffing
-                 anaylsis and increasing clerk efficiency. When working on these macros I began to realize that I found programming a lot more fulfilling
+                 analysis and increasing clerk efficiency. When working on these macros I began to realize that I found programming a lot more fulfilling
                  than my current position. I continued on at the position, but during quarantine I had more time to really evaluate what would make me happy and 
                  decided that I should pursue a career change.</p><br />
             <p>In August 2020 I started the Software Engineering bootcamp at the Flatiorn School. The languages and frameworks covered were Ruby, Ruby on Rails, Javascript
