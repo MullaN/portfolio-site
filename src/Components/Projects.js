@@ -3,6 +3,16 @@ import React from 'react'
 const Projects = () => {
     return(
         <div className='content'>
+            <img src = "./oscars-checklist.png" alt="Oscars Checklist Screenshot"/>
+            <h1>Oscars Checklist</h1>
+            <h2><a href="https://oscars-checklist.web.app/">Click here to try!</a></h2>
+            <p>Leading up to the 2021 Oscars I was trying to watch as many of the nominated movies before the award show. I developed a simple checklist using a React frontend and an
+                Express/MongoDB backend. The nominated movies are listed with checkboxes for each and an Material UI accordion to list what it was nominated for. Users save their checklist
+                on the home page and are given a link where they can come back and make updates using their given id.
+            </p>
+            <hr />
+            <br />
+            <br />
             <img src = "https://img.itch.zone/aW1nLzU0MDY5MzcuanBn/347x500/Ov3%2BbN.jpg" alt="We Multiply Screenshot"/>
             <h1>We Multiply</h1>
             <h2><a href="https://ivanooze.itch.io/we-multiply">Click here to try!</a> (Windows only)</h2>
