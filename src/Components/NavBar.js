@@ -3,9 +3,7 @@ import { NavLink, withRouter } from 'react-router-dom';
 
 const active = { 
   background: 'white', 
-  color: 'black', 
-  borderBottomLeftRadius: '5px', 
-  borderBottomRightRadius: '5px' 
+  color: 'black'
 }
  
 class Navbar extends React.Component {

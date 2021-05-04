@@ -1,24 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
-const Banner = () => {
-    
-    const [scrolled, setScrolled] = useState(0)
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-
-        return function clear() {window.removeEventListener('scroll', handleScroll)}
-    })
-
-    const handleScroll = (e) => {
-        setScrolled(window.scrollY)
-    }
+const Banner = ({scrolled}) => {
 
     return (
-        <div className="banner" style={{height: (window.innerHeight - scrolled)}}>
-            {scrolled ? <></> : <img src="./IMG_0071.JPG" alt="Andrew Mullan"></img>}
+        <div className="banner" style={{height: scrolled}}>
+            {scrolled < window.innerHeight ? <></> : <img src="./IMG_0071.JPG" alt="Andrew Mullan"></img>}
             <h1>Andrew Mullan</h1>
-            {scrolled ? <></> : <h2>Javascript, React, Ruby, Ruby on Rails Developer</h2>}
+            {scrolled < window.innerHeight ? <></> : <h2>Javascript, React, Ruby, Ruby on Rails Developer</h2>}
         </div>
     )
 }

@@ -13,22 +13,37 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 function App() {
   const [blogs, setBlogs] = useState([])
+  const [scrolled, setScrolled] = useState(window.innerHeight)
 
   useEffect(() => {
-      fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@admullan')
-      .then(resp => resp.json())
-      .then(blogs => setBlogs(blogs.items))
+    window.addEventListener('scroll', handleScroll)
+
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@admullan')
+    .then(resp => resp.json())
+    .then(blogs => setBlogs(blogs.items))
+
+    return function clear() {window.removeEventListener('scroll', handleScroll)}
   }, [])
+
+  const handleScroll = () => {
+    if((window.innerHeight - window.scrollY) > window.innerHeight/5){
+      setScrolled((window.innerHeight - window.scrollY))
+    }
+  }
 
   return (
     <div className="App">
-      <Banner />
+      <Banner scrolled={scrolled}/>
       <Router>
-        <NavBar />
-        <Route path='/' exact component={() => <Home />} />
-        <Route path='/about' exact component={() => <About />} />
-        <Route path='/projects' exact component={() => <Projects />} />
-        <Route path='/blogs' exact component={() => <Blogs blogs={blogs}/>} />
+        <div style={{position: 'fixed', top: scrolled, left: 0}}>
+          <NavBar />
+        </div>
+        <div style={{paddingTop: window.innerHeight}}>
+          <Route path='/' exact component={() => <Home />} />
+          <Route path='/about' exact component={() => <About />} />
+          <Route path='/projects' exact component={() => <Projects />} />
+          <Route path='/blogs' exact component={() => <Blogs blogs={blogs}/>} />
+        </div>
       </Router>
       <Socials />
     </div>
