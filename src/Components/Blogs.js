@@ -1,14 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
-const Blogs = () => {
-    const [blogs, setBlogs] = useState([])
-
-    useEffect(() => {
-        fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@admullan')
-        .then(resp => resp.json())
-        .then(blogs => setBlogs(blogs.items))
-    }, [])
-
+const Blogs = ({blogs = []}) => {
     return (
         <div className="content">
             {blogs.map(blog => {
